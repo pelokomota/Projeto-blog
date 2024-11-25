@@ -40,7 +40,7 @@
       with_items:
         - 'localhost'
         - '127.0.0.1'
-        - '35.89.133.177' #ip do wordpress server
+        - '172.17.177.40' #ip do wordpress server
 
     - name: 'Configurando mysql para aceitar conexão remota'
       copy:
@@ -104,7 +104,7 @@
         - { regex: 'database_name_here', value: 'wordpress_db'}
         - { regex: 'username_here', value: 'wordpress_user'}
         - { regex: 'password_here', value: '12345'}
-        - { regex: 'localhost', value: '52.43.71.232'} #ip do mysql server
+        - { regex: 'localhost', value: '172.17.177.41'} #ip do mysql server
       become: yes  
 
     - name: 'Configurando o apache para servir o Worpress'
