@@ -1,5 +1,5 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "generic/ubuntu1804"
+  config.vm.box = "generic/ubuntu2004"
   config.vm.provider "virtualbox" do |v|
     v.memory = 1024
   #config.ssh.insert_key = false
